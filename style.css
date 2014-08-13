@@ -5,6 +5,12 @@ body, html, div {
 
 }
 
+body {
+
+font: 14px 'Verdana', 'sans-serif';
+
+}
+
 .ib {
 
 	display: inline-block;
