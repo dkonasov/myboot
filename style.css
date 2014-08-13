@@ -1,0 +1,57 @@
+body, html, div {
+
+	margin: 0;
+	padding: 0;
+
+}
+
+.ib {
+
+	display: inline-block;
+	vertical-align:top;
+
+}
+
+img { 
+
+
+	max-width: 100%;
+	
+}
+
+.cb {
+
+	clear:both;
+
+}
+
+.interactive {
+
+	cursor: pointer;
+
+}
+
+.hide {
+
+	display: none;
+
+}
+
+.left {
+
+	float: left;
+
+}
+
+.cursive {
+
+	font-style: italic;
+
+
+}
+
+.right {
+
+	float: right;
+
+}
