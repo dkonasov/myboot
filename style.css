@@ -61,3 +61,31 @@ img {
 	float: right;
 
 }
+
+.null-rMargin {
+
+
+	margin-right: 0px !important;
+
+}
+
+.null-lMargin {
+
+
+	margin-left: 0px !important;
+
+}
+
+.null-tMargin {
+
+
+	margin-top: 0px !important;
+
+}
+
+.null-bMargin {
+
+
+	margin-bottom: 0px !important;
+
+}
