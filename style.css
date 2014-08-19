@@ -89,3 +89,32 @@ img {
 	margin-bottom: 0px !important;
 
 }
+
+.success, .error, .warning {
+
+	text-align: center;
+	border: 1px solid #ccc;
+	margin: 20px;
+	background: #f3f3f3;
+	padding: 40px;
+	font-weight:bold;
+
+}
+
+.error {
+
+	color: #f00;
+
+}
+
+.success {
+
+	color: #0f0;
+
+}
+
+.warning {
+
+	color: #0ff;
+
+}
