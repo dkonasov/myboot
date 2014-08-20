@@ -118,3 +118,10 @@ img {
 	color: #DBD804;
 
 }
+
+.ajax-link {
+
+	border-bottom: 1px dotted;
+	cursor: pointer;
+
+}
