@@ -12,7 +12,7 @@
 	
 	if(left>0-($('.mbSlider-elem').size()*w-w)){
 	
-	left=left-w;
+	left=left-w-11;
 	
 	} else {
 	

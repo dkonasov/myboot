@@ -1,5 +1,5 @@
 $(function(){
 
-$('.test').mbSlider({width:500});
+$('.test').mbSlider({width:500, height: 100});
 
 });
