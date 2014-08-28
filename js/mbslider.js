@@ -66,6 +66,10 @@
 	var showTime=params.showTime!=undefined ? params.showTime : def.showTime;
 	var loop=params.loop!=undefined ? params.loop : def.loop;
 	$('.mbSlider-list').css('-webkit-transition','left '+animTime+'s ease-out 0.5s');
+	$('.mbSlider-list').css('-moz-transition','left '+animTime+'s ease-out 0.5s');
+	$('.mbSlider-list').css('-o-transition','left '+animTime+'s ease-out 0.5s');
+	$('.mbSlider-list').css('-ms-transition','left '+animTime+'s ease-out 0.5s');
+	$('.mbSlider-list').css('transition','left '+animTime+'s ease-out 0.5s');
 	if(animate){
 	
 	window.setInterval(slideForward, (animTime+showTime)*1000);
