@@ -118,3 +118,24 @@ img {
 	color: #DBD804;
 
 }
+
+.mbSlider-elem {
+
+	display: inline-block;
+
+}
+
+.mbSlider-wrap {
+
+	position: relative;
+	overflow: hidden;
+
+}
+
+.mbSlider-list {
+
+	position: absolute;
+	padding-left:0px;
+	margin: 0px !important;
+
+}
