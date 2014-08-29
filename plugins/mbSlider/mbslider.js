@@ -1,6 +1,7 @@
 (function( $ ){
 
   $.fn.mbSlider = function(params) {
+  
   if(params==undefined) params={};
 	var def={
 				width: 100,
