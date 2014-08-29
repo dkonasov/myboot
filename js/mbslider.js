@@ -5,10 +5,11 @@
 	var def={
 				width: 100,
 				animTime: 1,
-				showTime: 2,
+				showTime: 4,
 				animate: true,
 				loop: true,
 				arrows: true,
+				progressbar: true,
 			};
 	var slideForward=function(){
 	
@@ -25,6 +26,7 @@
 	}
 	
 	}
+	$('.mbs-progressbar').css('width', ((1/120)*100)/w*100+'%');
 	$('.mbSlider-list').css('left', left+'px');
 	console.log('slide');
 	
@@ -37,6 +39,7 @@
 	left=left+w;
 	
 	} 
+	$('.mbs-progressbar').css('width', ((1/120)*100)/w*100+'%');
 	$('.mbSlider-list').css('left', left+'px');
 
 	
@@ -93,7 +96,18 @@
 	$('.mbSlider-list').css('-ms-transition','left '+animTime+'s ease-out');
 	$('.mbSlider-list').css('transition','left '+animTime+'s ease-out');
 	if(animate){
+	var progressbar=params.progressbar!=undefined ? params.progressbar : def.progressbar;
+	if(progressbar){
+	$('.mbSlider-wrap').append('<div class="mbs-progressbar"></div>');
+	$('.mbs-progressbar').css('width', ((1/120)*100)/w*100+'%');
+	window.setInterval(function(){
+	var percentWidth=parseInt($('.mbs-progressbar').css('width'))/w*100;
+	percentWidth=percentWidth+(1/120)*100;
 	
+	$('.mbs-progressbar').css('width', percentWidth+'%');
+	}, ((animTime+showTime)*1000)/120);
+	}
+
 	window.setInterval(slideForward, (animTime+showTime)*1000);
 	
 	}
