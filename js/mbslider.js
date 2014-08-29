@@ -8,6 +8,7 @@
 				showTime: 2,
 				animate: true,
 				loop: true,
+				arrows: true,
 			};
 	var slideForward=function(){
 	
@@ -26,6 +27,18 @@
 	}
 	$('.mbSlider-list').css('left', left+'px');
 	console.log('slide');
+	
+	}
+	
+	var slideBackward=function(){
+	
+	if(left<0){
+	
+	left=left+w+11;
+	
+	} 
+	$('.mbSlider-list').css('left', left+'px');
+
 	
 	}
 			
@@ -66,6 +79,14 @@
 	var animTime=params.animTime!=undefined ? params.animTime : def.animTime;
 	var showTime=params.showTime!=undefined ? params.showTime : def.showTime;
 	var loop=params.loop!=undefined ? params.loop : def.loop;
+	var arrows=params.arrows!=undefined ? params.arrows : def.arrows;
+	if(arrows){
+	
+		$('.mbSlider-wrap').append('<div class="mbs-arrow-wrap mbs-arrow-wrap-left"><span class="mb-slider-arrows mb-slider-arrow-left"></span></div><div class="mbs-arrow-wrap mbs-arrow-wrap-right"><span class="mb-slider-arrows mb-slider-arrow-right"></span></div>');
+		$('.mbs-arrow-wrap').css('line-height', parseInt($('.mbSlider-wrap').css('height'))+parseInt($('.mb-slider-arrows').css('height'))/2+'px');
+		$('.mb-slider-arrow-right').click(slideForward);
+		$('.mb-slider-arrow-left').click(slideBackward);
+	}
 	$('.mbSlider-list').css('-webkit-transition','left '+animTime+'s ease-out 0.5s');
 	$('.mbSlider-list').css('-moz-transition','left '+animTime+'s ease-out 0.5s');
 	$('.mbSlider-list').css('-o-transition','left '+animTime+'s ease-out 0.5s');

@@ -139,3 +139,33 @@ img {
 	margin: 0px !important;
 
 }
+
+.mb-slider-arrows {
+
+	display: inline-block;
+	width: 30px;
+	height: 32px;
+	background: url('img/mb-slider-arrows.png');
+	cursor: pointer;
+
+
+}
+
+.mbs-arrow-wrap {
+
+position:absolute;
+height: 100%;
+
+}
+
+.mbs-arrow-wrap.mbs-arrow-wrap-right {
+
+	right: 0;
+
+}
+
+.mb-slider-arrows.mb-slider-arrow-right {
+
+	background-position: -94px 0px;
+
+}
