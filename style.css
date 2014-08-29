@@ -119,9 +119,103 @@ img {
 
 }
 
+
 .ajax-link {
 
 	border-bottom: 1px dotted;
 	cursor: pointer;
+
+}
+.mbSlider-elem {
+
+	display: inline-block;
+	margin-right: -5px;
+
+}
+
+.mbSlider-wrap {
+
+	position: relative;
+	overflow: hidden;
+
+}
+
+.mbSlider-list {
+
+	position: absolute;
+	padding-left:0px;
+	margin: 0px !important;
+
+}
+
+.mb-slider-arrows {
+
+	display: inline-block;
+	width: 30px;
+	height: 32px;
+	background: url('img/mb-slider-arrows.png');
+	cursor: pointer;
+
+
+}
+
+.mbs-arrow-wrap {
+
+position:absolute;
+height: 100%;
+
+}
+
+.mbs-arrow-wrap.mbs-arrow-wrap-right {
+
+	right: 0;
+
+}
+
+.mb-slider-arrows.mb-slider-arrow-right {
+
+	background-position: -94px 0px;
+
+}
+
+.mbs-progressbar {
+
+	position: absolute;
+	top: 0;
+	width: 0%;
+	height: 5px;
+	background: #ccc;
+	opacity: 0.5;
+
+}
+
+.mbs-bullets {
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 20px;
+	background: rgba(0,0,0, 0.5);
+	z-index: 5;
+	border-radius: 4px;
+
+}
+
+.mbs-bullet {
+
+	width: 10px;
+	height: 10px;
+	float: left;
+	background: #ccc;
+	border-radius: 50%;
+	margin: 5px;
+	cursor: pointer;
+
+}
+
+.mbs-bullet.activeBullet {
+
+	background: #fff;
+
 
 }
