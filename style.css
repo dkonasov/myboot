@@ -122,6 +122,7 @@ img {
 .mbSlider-elem {
 
 	display: inline-block;
+	margin-right: -5px;
 
 }
 
