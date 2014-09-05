@@ -18,3 +18,16 @@ My own frontend bootstrap for web projects.
 					arrows: true-enable arrows controls
 					progressbar: true-enable progressbar
 					bullets: true-enable bullets controls
+			
+			
+			BGAlpha:
+			
+			Slowly switches different background images for the specified element.
+			
+			Basic usage: $('selector').bgAlpha(array images, {params})
+			
+			Params:	
+			
+					animTime: 1-how long animation plays
+					showTime: 4-how long background is shown
+					
